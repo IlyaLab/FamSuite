@@ -1,0 +1,35 @@
+# Configuration File for CIFBAT Ped Simulation
+# Note:
+# Must have a tab after the param name.
+# Param names are fixed.
+# Multiple params must be comma separated.
+# Fractional numbers must have a decimal.
+# For backgroundPenetrance, penetranceParams,
+#    order is: mean,sd for each population
+# Risk ratios: S->0  G -> 1
+# mcar for missing type:  use missingParam1 for fraction missing variants 0.01 (for 1%)
+# mar  for missing type: use missingParam1 for frac. missing,
+#          missingParam2 indicates the missingness type … 1/0 for gender  P1/P0 for population
+# mnar for missing type: use CC for case control and HH for het
+#
+outputFileLabel	pedNum_2
+pathToCIFBAT	/Users/davidgibbs/Dropbox/Research/Projects/Sim_Gen_CIFBAT/FamSuite1/scanFBAT.py
+resultsDir	/Users/davidgibbs/Desktop/pedTest
+pathToPython	python2.7
+totalTrials	3
+cifbatTrials	100
+numPeds	200
+ProportionControls	1.0
+numMarkers	30
+numCausal	3
+numPopulations	2
+popProportions	0.33
+minChildren	1
+maxChildren	3
+backgroundPenetrance	0.001,0.001,0.001,0.001
+penetranceParams	0.1,0.01,0.1,0.01
+riskratios	3.0,2.0,3.0,2.0
+missingType	mar
+missingParam1	0.05
+missingParam2	2
+missingParam3	0.8
