@@ -1,16 +1,16 @@
 # Configuration File for CIFBAT Ped Simulation
-# Note:
-# Must have a tab after the param name.
-# Param names are fixed.
-# Multiple params must be comma separated.
-# Fractional numbers must have a decimal.
-# For backgroundPenetrance, penetranceParams,
-#    order is: mean,sd for each population
-# Risk ratios: S->0  G -> 1
-# mcar for missing type:  use missingParam1 for fraction missing variants 0.01 (for 1%)
-# mar  for missing type: use missingParam1 for frac. missing,
-#         missingParam2 indicates the missingness type … 1/0 for gender  P1/P0 for population
-# mnar for missing type: use CC for case control and HH for het
+# Notes:
+#   Must have a tab after the param name.
+#   Param names are fixed.
+#   Multiple params must be comma separated.
+#   Fractional numbers must have a decimal.
+#   For backgroundPenetrance, penetranceParams,
+#     order is: mean,sd for each population
+#   Risk ratios: S->0  G -> 1
+#     mcar for missing type:  use missingParam1 for fraction missing variants 0.01 (for 1%)
+#     mar  for missing type: use missingParam1 for frac. missing,
+#          missingParam2 indicates the missingness type … 1/0 for gender  P1/P0 for population
+#     mnar for missing type: use CC for case control and HH for het
 #
 #
 #
