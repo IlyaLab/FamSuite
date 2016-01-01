@@ -11,7 +11,7 @@ def stringToList(x):
 def readTheParams(tofile):
     param = dict()
     ptxt = open(tofile, 'r').read().strip().split("\n")
-    ptxt = [z for z in ptxt if z[0] != '#']
+    ptxt = [z.strip() for z in ptxt if z[0] != '#']
     for pi in ptxt:
         if ',' in pi:
             pip = pi.split("\t")

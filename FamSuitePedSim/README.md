@@ -7,6 +7,10 @@ Institute for Systems Biology
 A simulation of pedigrees with a random set of causal variants under an additive model.
 
 To perform a simulation:
+
+0.) Use the FamSuite version found in the FamSuitePedSim directory. File formats changed slightly
+    and the simulation is out of date with that change.
+
 1.) Write or generate a config file. See config/sampleParams.txt for an example with comments.
     Also see util/makeConfig.py for a method of generating a set of config files.
 

@@ -52,6 +52,6 @@ def simped(param):
 
     # compute phenotypes
     (peds, varParams) = genPheno(peds, param)
-    callPheno(peds)
+    callPheno(peds, param)
 
     return((peds, varParams))

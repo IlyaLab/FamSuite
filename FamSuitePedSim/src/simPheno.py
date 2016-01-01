@@ -93,13 +93,16 @@ def genPheno(peds, param):
     return((peds, varParams))
 
 
-def callPheno(peds):
+def callPheno(peds, params):
     for ped in peds:
         for j in range(0, ped.getSibNum()):
             thisPheno = ped.getSibPheno(j)
             prob = min(1.0,exp(thisPheno))  # cap the probability
-            if ranf() < prob:
-                ped.setSibPhenoCall(j, 2.0)
+            if params['modelType'] == 'random':
+                ped.setSibPhenoCall(j, float(random.randint(1,3,1)[0]))
             else:
-                ped.setSibPhenoCall(j, 1.0)
+                if ranf() < prob:
+                    ped.setSibPhenoCall(j, 2.0)
+                else:
+                    ped.setSibPhenoCall(j, 1.0)
     return()

@@ -15,10 +15,11 @@
 #
 #
 # Where to write the results
-resultsDir	/Users/davidgibbs/Desktop/testTest/
+resultsDir	testout/
 #
 # Where the CIFBAT software is located
-pathToCIFBAT	/Users/davidgibbs/Dropbox/Research/Projects/Sim_Gen_CIFBAT/FamSuite1/scanFBAT.py
+# for this simulation, use v1 of the FamSuite software found in FamSuitePedSim
+pathToCIFBAT	FamSuite_v1/scanFBAT.py
 #
 #
 # How to label the output files
