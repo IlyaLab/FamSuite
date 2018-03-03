@@ -26,7 +26,7 @@ Trios with unknown phenotype are not analyzed.
 
 3. Required: gender file (command line option -gender)
 Example: sampleGenderFile.txt
-2 column file with trio ids in first column and the offspring's gender in second column (1 = control, 2 = case, NA = unknown). Used for chrX markers.
+2 column file with trio ids in first column and the offspring's gender in second column (column 2 is '1' for male, '2' for female). Used for chrX markers.
 Trios with unknown gender are not analyzed.
 
 4. Optional: pedigree list file (command line option -pedigree)
